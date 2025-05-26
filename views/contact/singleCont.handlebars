@@ -1,0 +1,13 @@
+<h1>Contact List</h1>
+
+{{#if payload}}
+<ul>
+    <li>First Name:{{payload.fname}}</li>
+    <li>Lirst Name:{{payload.lname}}</li>
+    <li>Phone Number:{{payload.phno}}</li>
+    <li>Saved Location:{{payload.loc}}</li>
+</ul>
+
+{{else}}
+<h1>No Such Contact</h1>
+{{/if}}

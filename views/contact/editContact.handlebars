@@ -1,0 +1,17 @@
+<h1>Edit a contact page</h1>
+<form action="/api/edit/{{payload._id}}" method="post">
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" id="fname" value="{{payload.fname}}"><br>
+    <label for="lname">Lirst Name:</label>
+    <input type="text" name="lname" id="lname" value="{{payload.lname}}"><br>
+    <label for="phno">Phone number:</label>
+    <input type="number" name="phno" id="phno" value="{{payload.phno}}"><br>
+    <label for="loc">Saving Location</label>
+    <select name="loc" id="loc" >
+        <option value="mobile">Mobile</option>
+        <option value="sim">Sim</option>
+        <option value="email">Email</option>
+    </select><br>
+    <button type="submit">Update Contact</button>
+
+</form>

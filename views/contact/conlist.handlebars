@@ -1,0 +1,16 @@
+<h1>Contact List</h1>
+
+{{#each payload}}
+<ul>
+    <li>First Name:{{this.fname}}</li>
+    <li>Lirst Name:{{this.lname}}</li>
+    <li>Phone Number:{{this.phno}}</li>
+    <li>Saved Location:{{this.loc}}</li>
+    <span><a href="/api/{{this._id}}">Info</a></span>
+    <span><a href="/api/edit/{{this._id}}">Edit</a></span>
+    <span><a href="/api/delete/{{this._id}}">Delete</a></span>
+</ul>
+
+{{else}}
+<h1>bloody fool no cotact first create contact</h1>
+{{/each}}
